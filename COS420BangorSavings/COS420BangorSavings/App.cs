@@ -12,22 +12,22 @@ namespace COS420BangorSavings
         public App()
         {
             // The root page of your application
-            var content = new ContentPage
-            {
-                Title = "COS420BangorSavings",
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            //var content = new ContentPage
+            //{
+            //    Title = "COS420BangorSavings",
+            //    Content = new StackLayout
+            //    {
+            //        VerticalOptions = LayoutOptions.Center,
+            //        Children = {
+            //            new Label {
+            //                HorizontalTextAlignment = TextAlignment.Center,
+            //                Text = "Welcome to Xamarin Forms!"
+            //            }
+            //        }
+            //    }
+            //};
 
-            MainPage = new NavigationPage(content);
+            MainPage = new NavigationPage(new Example());
         }
 
         protected override void OnStart()
