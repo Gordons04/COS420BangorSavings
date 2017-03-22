@@ -2,23 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="COS420BangorSavings.Example">
+
+  <StackLayout Padding="20">
+    <Label Text="Bangor Savings Bank" TextColor="Navy" FontSize="28"></Label>
+    <Label Text="Login" TextColor="Black" FontSize="18"></Label>
+    <Label Text="" TextColor="Black" FontSize="18"></Label>
+    <Entry x:Name="txtUname" Placeholder="Type Username" ></Entry>
+    <Entry x:Name="txtPassword" Placeholder="Type Password" ></Entry>
+    <StackLayout Orientation="Horizontal">
+      <Button BackgroundColor="Gray" TextColor="White" Text="Cancel" Clicked="OnCancel"/>
+      <Button BackgroundColor="Blue" TextColor="White" Text="Login" Clicked="OnLogin"/>
+    </StackLayout>
+
+  </StackLayout>
   
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="30" />
-      <RowDefinition Height="40" />
-      <RowDefinition Height="40" />
-      <RowDefinition Height="40" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*" />
-      <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
   
-  <Label Text="Login" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"></Label>
-  <Entry Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Text="Username"></Entry>
-  <Entry Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="Password"></Entry>
-    <Button  Text="Cancel" Grid.Column="0" Grid.Row="3"></Button>
-    <Button  Text="Login" Grid.Column="1" Grid.Row="3"></Button>
-  </Grid>
 </ContentPage>

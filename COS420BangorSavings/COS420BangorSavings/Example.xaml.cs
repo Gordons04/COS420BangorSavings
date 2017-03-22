@@ -14,5 +14,16 @@ namespace COS420BangorSavings
         {
             InitializeComponent();
         }
+
+        public void OnLogin(object o, EventArgs e)
+        {
+           
+        }
+
+        public void OnCancel(object o, EventArgs e)
+        {
+
+        }
+
     }
 }
