@@ -24,6 +24,6 @@
             <Button Text="Charity 3" TextColor="White" BackgroundColor="#127ac7"/>
             <Button Text="Charity 4" TextColor="White" BackgroundColor="#127ac7"/>
             <Button Text="Charity 5" TextColor="White" BackgroundColor="#127ac7"/>
-    </StackLayout>
+        </StackLayout>
     </ScrollView>
 </ContentPage>
