@@ -7,25 +7,21 @@
     <ScrollView>
 
         <StackLayout>
-            <StackLayout>
-                <Image Source="Homepage_logo.png"/>
+            <StackLayout VerticalOptions="Start">
+				<Image Source="Homepage_logo.png"/>
             </StackLayout>
-			<!--
-            <Label Text="Penobscot  Hancock  Knox" TextColor="Black" />
-            <BoxView Color="#f0f0f0" HeightRequest="1"/>
-            <Button x:Name="charity1_button1" Text="Charity 1" TextColor="White"  BackgroundColor="#127ac7" Clicked="Button_Clicked"/>
-            <Button x:Name="charity1_button2" Text="Charity 2" TextColor="White" BackgroundColor="#127ac7" Clicked="charity1_button2_Clicked"/>
-            <Button x:Name="charity1_button3" Text="Charity 3" TextColor="White" BackgroundColor="#127ac7" Clicked="charity1_button2_Clicked_1"/>
-            <Button x:Name="charity1_button4" Text="Charity 4" TextColor="White" BackgroundColor="#127ac7" Clicked="charity1_button2_Clicked_2"/>
-            <Button x:Name="charity1_button5" Text="Charity 5" TextColor="White" BackgroundColor="#127ac7" Clicked="charity1_button2_Clicked_3"/>
-            <Label Text="Penobscot  Hancock  Knox" TextColor="Black" />
-            <BoxView Color="#f0f0f0" HeightRequest="1"/>
-            <Button Text="Charity 1" TextColor="White" BackgroundColor="#127ac7"/>
-            <Button Text="Charity 2" TextColor="White" BackgroundColor="#127ac7"/>
-            <Button Text="Charity 3" TextColor="White" BackgroundColor="#127ac7"/>
-            <Button Text="Charity 4" TextColor="White" BackgroundColor="#127ac7"/>
-            <Button Text="Charity 5" TextColor="White" BackgroundColor="#127ac7"/>
-            -->
-			</StackLayout>
+
+			<StackLayout VerticalOptions="CenterAndExpand">
+    			<!-- middle controls -->
+  			</StackLayout>
+
+			<StackLayout VerticalOptions="End">
+				<Button x:Name="Home" Text="Home" TextColor="White" BackgroundColor="#127ac7"/>
+				<Button x:Name="Voting" Text="Voting" TextColor="White" BackgroundColor="#127ac7"/>
+				<Button x:Name="Leaderboards" Text="Leaderboards" TextColor="White" BackgroundColor="#127ac7"/>
+    			<Image Source="Bottom_navbar.png"/>
+  			</StackLayout>
+		</StackLayout>
+		
     </ScrollView>
 </ContentPage>
