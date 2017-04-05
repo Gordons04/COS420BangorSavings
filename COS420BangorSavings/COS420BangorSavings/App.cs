@@ -27,7 +27,7 @@ namespace COS420BangorSavings
             //    }
             //};
 
-            MainPage = new NavigationPage(new Example());
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()
