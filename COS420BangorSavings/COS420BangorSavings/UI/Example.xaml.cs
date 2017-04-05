@@ -17,7 +17,7 @@ namespace COS420BangorSavings
 
         public void OnLogin(object o, EventArgs e)
         {
-           
+        	// Switch to HomePage
         }
 
         public void OnCancel(object o, EventArgs e)
