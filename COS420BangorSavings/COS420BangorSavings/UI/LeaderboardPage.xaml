@@ -2,51 +2,5 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="COS420BangorSavings.UI.LeaderboardPage">
-    <Grid x:Name="RootLayout">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <!--Title bar -->
-        <Grid x:Name="TitleBar" Background="#373A36"  Grid.Row ="0" Height="60">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Image Margin="5"  x:Name="DrawerIcon"  Grid.Column="0" Source="/Assets/ic_drawer.png" HorizontalAlignment="Left" Tapped="DrawerIcon_Tapped" />
-            <TextBlock Grid.Column="1" Text="DRAWER LAYOUT DEMO" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
-        </Grid>
-        <!--DrawerLayout bar -->
-        <drawerLayout:DrawerLayout Grid.Row="1"  x:Name="DrawerLayout">
-            <!--MainPage -->
-            <Grid x:Name="MainFragment" Background="White">
-                <TextBlock Name="DetailsTxtBlck" Text="No Item Selected..." Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="Black" />
-            </Grid>
-            <!--Favorites List Section -->
-            <Grid x:Name="ListFragment">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Border Grid.Row="0" Background="#5490CC">
-                    <TextBlock HorizontalAlignment="Center" Margin="0,5,0,5" Text="MyFavorites" FontSize="25"/>
-                </Border>
-                <ListView Grid.Row="1" VerticalAlignment="Center" x:Name="ListMenuItems" SelectionChanged="ListMenuItems_SelectionChanged">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Background="White" Margin="0,0,0,1">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <TextBlock Grid.Row="0"   Text="{Binding}" Margin="10"  VerticalAlignment="Center" FontSize="18" Foreground="Black" />
-                                <Rectangle Grid.Row="1" HorizontalAlignment="Left" Fill="Gray" Width="500" Height="0.5"/>
-                            </Grid>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
 
-            </Grid>
-        </drawerLayout:DrawerLayout>
-    </Grid>
 </ContentPage>

@@ -26,7 +26,6 @@ namespace COS420BangorSavings.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::COS420BangorSavings.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
